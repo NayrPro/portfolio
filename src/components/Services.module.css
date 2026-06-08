@@ -1,0 +1,70 @@
+.section {
+  padding: 100px 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--cyan);
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 48px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.card {
+  padding: 28px 22px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  transition: all 0.25s;
+}
+
+.card:hover {
+  border-color: rgba(99,179,237,0.3);
+  background: var(--surface2);
+  transform: translateY(-3px);
+}
+
+.num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--text3);
+  margin-bottom: 16px;
+  letter-spacing: 0.08em;
+}
+
+.sTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 13px;
+  color: var(--text2);
+  line-height: 1.65;
+  font-weight: 300;
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .section { padding: 60px 20px; }
+}

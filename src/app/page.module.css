@@ -1,0 +1,14 @@
+.main {
+  position: relative;
+  z-index: 1;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0 48px;
+}
+
+@media (max-width: 768px) {
+  .divider { margin: 0 20px; }
+}
